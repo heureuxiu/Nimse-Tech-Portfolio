@@ -7,13 +7,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#4F6BFF",
+        primary: "#5443a9",
         secondary: "#F5F7FF",
         accent: "#FF7A5A",
         dark: "#2A3256",
         light: "#FFFFFF",
+        purple: {
+          500: "#5443a9",
+          600: "#483997",
+        },
         blue: {
-          500: "#4F6BFF",
+          500: "#5443a9",
+          600: "#483997",
         },
         gray: {
           100: "#F9FAFC",

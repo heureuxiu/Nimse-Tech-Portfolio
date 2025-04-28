@@ -78,7 +78,7 @@ const Navbar = () => {
             </Link>
           ))}
           <motion.button 
-            className="ml-4 px-6 py-2 bg-primary text-white rounded-full hover:bg-blue-600 transition-colors shadow-md"
+            className="ml-4 px-6 py-2 bg-primary text-white rounded-full hover:bg-purple-600 transition-colors shadow-md"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -121,7 +121,7 @@ const Navbar = () => {
               </Link>
             ))}
             <motion.button 
-              className="self-start px-6 py-2 bg-primary text-white rounded-full hover:bg-blue-600 transition-colors shadow-md"
+              className="self-start px-6 py-2 bg-primary text-white rounded-full hover:bg-purple-600 transition-colors shadow-md"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

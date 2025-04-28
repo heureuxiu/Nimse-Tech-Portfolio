@@ -42,7 +42,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
           >
             <motion.button
-              className="px-8 py-4 bg-primary rounded-full text-lg font-semibold text-white hover:bg-blue-600 transition-all shadow-md"
+              className="px-8 py-4 bg-primary rounded-full text-lg font-semibold text-white hover:bg-purple-600 transition-all shadow-md"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -70,7 +70,7 @@ const Hero = () => {
                 placeholder="Search for Services: Seo, Ads, Marketing"
                 className="w-full py-4 px-6 pr-12 rounded-full bg-white shadow-md border border-gray-200 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
               />
-              <button className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-primary p-3 rounded-full hover:bg-blue-600 transition-colors shadow-md">
+              <button className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-primary p-3 rounded-full hover:bg-purple-600 transition-colors shadow-md">
                 <FaSearch className="text-white" />
               </button>
             </div>

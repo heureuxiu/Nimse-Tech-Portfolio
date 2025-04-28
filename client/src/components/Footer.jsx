@@ -24,19 +24,19 @@ const Footer = () => {
               We create innovative digital solutions to help businesses grow and succeed in the digital landscape.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-primary hover:text-blue-600 transition-colors">
+              <a href="#" className="text-primary hover:text-purple-600 transition-colors">
                 <FaFacebook size={20} />
               </a>
-              <a href="#" className="text-primary hover:text-blue-600 transition-colors">
+              <a href="#" className="text-primary hover:text-purple-600 transition-colors">
                 <FaTwitter size={20} />
               </a>
-              <a href="#" className="text-primary hover:text-blue-600 transition-colors">
+              <a href="#" className="text-primary hover:text-purple-600 transition-colors">
                 <FaInstagram size={20} />
               </a>
-              <a href="#" className="text-primary hover:text-blue-600 transition-colors">
+              <a href="#" className="text-primary hover:text-purple-600 transition-colors">
                 <FaLinkedin size={20} />
               </a>
-              <a href="#" className="text-primary hover:text-blue-600 transition-colors">
+              <a href="#" className="text-primary hover:text-purple-600 transition-colors">
                 <FaGithub size={20} />
               </a>
             </div>

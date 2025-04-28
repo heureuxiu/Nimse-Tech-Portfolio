@@ -95,7 +95,7 @@ const TeamMemberCard = ({ member, index }) => {
 
 const Section4 = () => {
   return (
-    <section id="team" className="py-20 bg-gray-50">
+    <section id="team" className="py-20 bg-[#fdfdff]">
       <div className="container mx-auto px-4">
         <motion.div
           className="text-center mb-16"

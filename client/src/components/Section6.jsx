@@ -93,7 +93,7 @@ const BlogCard = ({ post, index }) => {
 
 const Section6 = () => {
   return (
-    <section id="blogs" className="py-20 bg-gray-50">
+    <section id="blogs" className="py-20 bg-[#fdfdff]">
       <div className="container mx-auto px-4">
         <motion.div
           className="text-center mb-16"

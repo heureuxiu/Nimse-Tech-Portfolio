@@ -56,7 +56,7 @@ const Navbar = () => {
           <img 
             src={logo}
             alt="Nimse Tech Logo" 
-            className="h-20" 
+            className="h-12 md:h-16 lg:h-20" 
           />
         </motion.div>
         

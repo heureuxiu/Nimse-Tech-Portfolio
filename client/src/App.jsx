@@ -37,12 +37,14 @@ function App() {
       <Favicon />
       <Navbar />
       <Hero />
-      <Services />
-      <Portfolio />
-      <Team />
-      <About />
-      <Blogs />
-      <Contact />
+      <div className="bg-[#fdfdff]">
+        <Services />
+        <Portfolio />
+        <Team />
+        <About />
+        <Blogs />
+        <Contact />
+      </div>
       <Footer />
       {/* Add other components/sections here */}
     </>

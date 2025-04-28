@@ -42,6 +42,10 @@
   .section-subtitle {
     @apply text-lg text-gray-600 mb-12 text-center max-w-3xl mx-auto;
   }
+  
+  .section-bg {
+    @apply bg-[#fdfdff];
+  }
 }
 
 /* Custom animations */

@@ -52,11 +52,11 @@ const teamData = [
 const TeamMemberCard = ({ member, index }) => {
   return (
     <motion.div
-      className="bg-white rounded-lg shadow-lg overflow-hidden"
+      className="bg-[#fdfdff] rounded-lg shadow-lg overflow-hidden"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      viewport={{ once: true }}
+      viewport={{ once: true }} 
       whileHover={{ y: -10 }}
     >
       <div className="relative overflow-hidden group">

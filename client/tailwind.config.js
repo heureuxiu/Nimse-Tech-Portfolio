@@ -12,7 +12,6 @@ export default {
         accent: "#FF7A5A",
         dark: "#2A3256",
         light: "#FFFFFF",
-        background: "#fdfdff",
         purple: {
           500: "#5443a9",
           600: "#483997",

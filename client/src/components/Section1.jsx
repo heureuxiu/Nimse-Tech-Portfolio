@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import ParticleBackground from './ParticleBackground';
 import { FaSearch, FaCheck } from 'react-icons/fa';
 
-const Hero = () => {
+const Section1 = () => {
   return (
     <section id="home" className="pt-32 pb-20 md:py-40 bg-gradient-to-br from-secondary to-light text-dark relative overflow-hidden min-h-screen flex items-center">
       <ParticleBackground lightMode={true} />
@@ -102,4 +102,4 @@ const Hero = () => {
   );
 };
 
-export default Hero; 
+export default Section1; 

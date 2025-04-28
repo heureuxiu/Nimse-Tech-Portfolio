@@ -1,15 +1,8 @@
 import { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Services from './components/Services';
-import Portfolio from './components/Portfolio';
-import Team from './components/Team';
-import About from './components/About';
-import Blogs from './components/Blogs';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
-import Favicon from './components/Favicon';
-// Import other components as you create them
+import LandingPage from './pages/LandingPage';
 
 function App() {
   useEffect(() => {
@@ -33,21 +26,13 @@ function App() {
   }, []);
   
   return (
-    <>
-      <Favicon />
+    <Router>
       <Navbar />
-      <Hero />
-      <div className="bg-[#fdfdff]">
-        <Services />
-        <Portfolio />
-        <Team />
-        <About />
-        <Blogs />
-        <Contact />
-      </div>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+      </Routes>
       <Footer />
-      {/* Add other components/sections here */}
-    </>
+    </Router>
   );
 }
 

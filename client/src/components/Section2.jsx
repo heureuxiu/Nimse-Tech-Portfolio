@@ -7,39 +7,39 @@ const ServiceCard = ({ icon, title, description, delay }) => {
   
   return (
     <motion.div
-      className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow"
+      className="bg-white rounded-lg shadow-lg p-4 sm:p-5 md:p-6 hover:shadow-xl transition-shadow"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay }}
       viewport={{ once: true }}
     >
-      <div className="text-primary mb-4">
-        <Icon size={40} />
+      <div className="text-primary mb-3 md:mb-4">
+        <Icon size={32} className="sm:w-8 sm:h-8 md:w-10 md:h-10" />
       </div>
-      <h3 className="text-xl font-bold mb-2">{title}</h3>
-      <p className="text-gray-600">{description}</p>
+      <h3 className="text-lg sm:text-xl font-bold mb-2">{title}</h3>
+      <p className="text-sm sm:text-base text-gray-600">{description}</p>
     </motion.div>
   );
 };
 
 const Section2 = () => {
   return (
-    <section id="services" className="py-20 bg-[#fdfdff]">
-      <div className="container mx-auto px-4">
+    <section id="services" className="py-12 sm:py-16 md:py-20 bg-[#fdfdff]">
+      <div className="container mx-auto px-4 sm:px-6">
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-8 sm:mb-12 md:mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 sm:mb-4">Our Services</h2>
+          <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
             We offer a comprehensive range of digital services to help your business thrive in the online world.
           </p>
         </motion.div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
           <ServiceCard
             icon={FaDesktop}
             title="Web Development"

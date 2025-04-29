@@ -57,27 +57,27 @@ const Section3 = () => {
     : projects.filter(project => project.category === filter);
   
   return (
-    <section id="portfolio" className="py-20 bg-[#fdfdff]">
-      <div className="container mx-auto px-4">
+    <section id="portfolio" className="py-12 sm:py-16 md:py-20 bg-[#fdfdff]">
+      <div className="container mx-auto px-4 sm:px-6">
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-8 sm:mb-12 md:mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Portfolio</h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 sm:mb-4">Our Portfolio</h2>
+          <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
             Explore our recent projects and see how we've helped businesses like yours achieve their goals.
           </p>
         </motion.div>
         
         {/* Filter Buttons */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
+        <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-8 sm:mb-12">
           {categories.map((category, index) => (
             <motion.button
               key={index}
-              className={`px-4 py-2 rounded-full ${
+              className={`px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-sm sm:text-base ${
                 filter === category 
                   ? 'bg-primary text-white' 
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
@@ -95,7 +95,7 @@ const Section3 = () => {
         </div>
         
         {/* Project Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
           {filteredProjects.map((project, index) => (
             <motion.div
               key={project.id}
@@ -109,13 +109,13 @@ const Section3 = () => {
               <img 
                 src={project.image} 
                 alt={project.title} 
-                className="w-full h-48 object-cover"
+                className="w-full h-40 sm:h-48 object-cover"
               />
-              <div className="p-6">
-                <span className="text-primary text-sm font-semibold">{project.category}</span>
-                <h3 className="text-xl font-bold mt-2 mb-3">{project.title}</h3>
-                <p className="text-gray-600">{project.description}</p>
-                <button className="mt-4 text-primary font-medium hover:text-purple-600 transition-colors">
+              <div className="p-4 sm:p-6">
+                <span className="text-primary text-xs sm:text-sm font-semibold">{project.category}</span>
+                <h3 className="text-lg sm:text-xl font-bold mt-1 sm:mt-2 mb-2 sm:mb-3">{project.title}</h3>
+                <p className="text-sm sm:text-base text-gray-600">{project.description}</p>
+                <button className="mt-3 sm:mt-4 text-primary text-sm sm:text-base font-medium hover:text-purple-600 transition-colors">
                   View Details →
                 </button>
               </div>

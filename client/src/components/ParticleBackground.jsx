@@ -31,7 +31,7 @@ const ParticleBackground = ({ lightMode = false }) => {
       constructor() {
         this.x = Math.random() * canvas.width;
         this.y = Math.random() * canvas.height;
-        this.size = Math.random() * 3 + 1;
+        this.size = Math.random() * 5 + 2;
         this.speedX = Math.random() * 2 - 1;
         this.speedY = Math.random() * 2 - 1;
       }
@@ -76,12 +76,12 @@ const ParticleBackground = ({ lightMode = false }) => {
           const dy = particles[a].y - particles[b].y;
           const distance = Math.sqrt(dx * dx + dy * dy);
           
-          if (distance < 150) {
+          if (distance < 180) {
             // In light mode, use dark blue lines. In dark mode, use white lines
             ctx.strokeStyle = lightMode 
-              ? `rgba(75, 85, 99, ${0.2 - distance/750})` 
-              : `rgba(255, 255, 255, ${0.2 - distance/750})`;
-            ctx.lineWidth = 0.6;
+              ? `rgba(75, 85, 99, ${0.2 - distance/900})` 
+              : `rgba(255, 255, 255, ${0.2 - distance/900})`;
+            ctx.lineWidth = 0.8;
             ctx.beginPath();
             ctx.moveTo(particles[a].x, particles[a].y);
             ctx.lineTo(particles[b].x, particles[b].y);
